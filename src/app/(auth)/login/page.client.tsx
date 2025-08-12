@@ -7,7 +7,6 @@ import { useMemo, useState } from 'react';
 import { toast } from 'sonner';
 import { z } from 'zod';
 
-import { authClient } from '@/auth/client';
 import AuthForm, {
   AuthFormDividing,
   AuthFormField,
@@ -17,6 +16,7 @@ import AuthForm, {
   AuthFormTerms,
 } from '@/components/auth/form';
 import AuthLayout from '@/components/auth/layout';
+import { authClient } from '@/modules/auth/client';
 
 export default function Login() {
   const router = useRouter();
@@ -41,7 +41,7 @@ export default function Login() {
       password: values.password,
       fetchOptions: {
         headers: {
-          'x-captcha-response': turnstileToken as string,
+          'x-captcha-response': turnstileToken!!,
         },
       },
     });

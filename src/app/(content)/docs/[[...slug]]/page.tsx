@@ -7,7 +7,7 @@ import {
 import { notFound } from 'next/navigation';
 
 import { getMDXComponents } from '@/components/content/mdx';
-import { source } from '@/lib/content';
+import { source } from '@/modules/content';
 
 export default async function Page(props: {
   params: Promise<{ slug?: string[] }>;

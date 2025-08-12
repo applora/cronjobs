@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { blog } from '@/lib/content';
+import { blog } from '@/modules/content';
 
 export default function Page(): React.ReactElement {
   const posts = [...blog.getPages()].sort(

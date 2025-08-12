@@ -15,7 +15,6 @@ import {
 import { toast } from 'sonner';
 import { type z } from 'zod';
 
-import { authClient } from '@/auth/client';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -26,6 +25,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
+import { authClient } from '@/modules/auth/client';
 
 interface FormContextValue {
   form: UseFormReturn<any>;

@@ -5,13 +5,13 @@ import { useMemo } from 'react';
 import { toast } from 'sonner';
 import z from 'zod';
 
-import { authClient } from '@/auth/client';
 import AuthForm, {
   AuthFormField,
   AuthFormHeader,
   AuthFormSubmit,
 } from '@/components/auth/form';
 import AuthLayout from '@/components/auth/layout';
+import { authClient } from '@/modules/auth/client';
 
 export default function ResetPassword() {
   const formSchema = useMemo(

@@ -8,7 +8,7 @@ import { Control } from './page.client';
 
 import { getMDXComponents } from '@/components/content/mdx';
 import { buttonVariants } from '@/components/ui/button';
-import { blog } from '@/lib/content';
+import { blog } from '@/modules/content';
 
 export default async function Page(props: {
   params: Promise<{ slug: string }>;

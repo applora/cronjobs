@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 
 import { baseOptions } from './config';
 
-import { source } from '@/lib/content';
+import { source } from '@/modules/content';
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (

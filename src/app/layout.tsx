@@ -3,7 +3,7 @@ import { getLocale } from 'next-intl/server';
 import { Toaster } from 'sonner';
 
 import Analystics from '@/components/shared/analytics';
-import { ThemeProvider } from '@/contexts/theme';
+import { ThemeProvider } from '@/components/shared/theme-provider';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {

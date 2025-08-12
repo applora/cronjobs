@@ -2,7 +2,7 @@ import { loader } from 'fumadocs-core/source';
 import { createMDXSource } from 'fumadocs-mdx';
 import { attachFile, createOpenAPI } from 'fumadocs-openapi/server';
 
-import { blog as blogPosts, docs, meta } from '../../.source';
+import { blog as blogPosts, docs, meta } from '../../../.source';
 
 export const source = loader({
   baseUrl: '/docs',
