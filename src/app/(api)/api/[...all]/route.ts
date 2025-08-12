@@ -1,6 +1,6 @@
 import { handle } from 'hono/vercel';
 
-import { app } from '@/routes/webhook';
+import { app } from '@/routes/app';
 
 export const OPTIONS = handle(app);
 export const GET = handle(app);

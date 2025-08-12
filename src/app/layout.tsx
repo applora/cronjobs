@@ -4,7 +4,8 @@ import { Toaster } from 'sonner';
 
 import Analystics from '@/components/shared/analytics';
 import { ThemeProvider } from '@/components/shared/theme-provider';
-import '@/styles/globals.css';
+
+// import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
