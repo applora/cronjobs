@@ -136,7 +136,6 @@ async function createNewActor(): Promise<void> {
     const packageJsonPath = path.join(newActorDir, 'package.json');
     await updatePackageName(packageJsonPath, projectName);
 
-
     console.log(`\n✅ Crawler '${projectName}' created successfully!`);
     console.log(`📍 Location: ${newActorDir}`);
     console.log('\n🎯 Next steps:');

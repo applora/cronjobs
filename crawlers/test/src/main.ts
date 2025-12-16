@@ -1,4 +1,3 @@
-
 import { KeyValueStore, PlaywrightCrawler } from 'crawlee';
 import { firefox } from 'playwright';
 
@@ -28,4 +27,3 @@ const crawler = new PlaywrightCrawler({
 await crawler.run([]);
 
 process.exit(0);
-
