@@ -11,3 +11,5 @@ Apify Actors are serverless programs that run in isolated Docker containers. The
 - Produce structured JSON output
 - Scale automatically from seconds to hours
 - Maintain state and support restarts
+
+Ofelia + Dozzle + Crawlee + R2
