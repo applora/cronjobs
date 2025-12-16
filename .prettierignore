@@ -1,0 +1,4 @@
+.prettierignore
+pnpm-lock.yaml
+CLAUDE.md
+.prettierrc
