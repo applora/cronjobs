@@ -25,11 +25,14 @@ pnpm start
 
 ### Docker Commands
 ```bash
-# Build and start all services (web + Redis)
+# Build and start all services (web + Redis + Traefik)
 docker-compose up -d
 
 # View service logs
 docker-compose logs -f web
+
+# View Traefik dashboard (available at http://localhost:8080)
+docker-compose logs -f traefik
 
 # Stop services
 docker-compose down
@@ -94,16 +97,21 @@ src/
 - Use `import/export` syntax (ES modules)
 
 ### Environment Variables
-Create a `.env` file based on `.env.example` (if present):
+Create a `.env` file based on `.env.example`:
 - `NODE_ENV`: development/production
 - `REDIS_URL`: Redis connection string
 - `PORT`: Server port (default: 3000)
+- `HOST`: Domain name for Traefik routing (e.g., supercrawler.localhost)
 
 ### Docker Development
 - Multi-stage build optimizes image size
 - Base image includes Playwright and Camoufox
 - Version compatibility check via `check-playwright-version.mjs`
 - Persistent storage in `./storage` directory
+- Traefik reverse proxy for automatic SSL termination and routing
+- Services communicate through internal Docker network
+- Access web app via configured HOST domain (e.g., http://supercrawler.localhost)
+- Traefik dashboard available at http://localhost:8080
 
 ## Code Conventions
 
