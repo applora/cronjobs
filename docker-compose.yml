@@ -9,6 +9,7 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:8880"
+      - "--entrypoints.web.http.middlewares.https@docker"
       - "--entrypoints.web.http.middlewares.https.redirectscheme.scheme=https"
       - "--entrypoints.websecure.address=:8443"
       - "--entrypoints.websecure.http.tls=true"
