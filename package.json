@@ -22,7 +22,7 @@
     "@hono/node-server": "^1.19.7",
     "dotenv": "^17.2.3",
     "hono": "^4.11.1",
-     "camoufox-js": "^0.7.0",
+    "camoufox-js": "^0.7.0",
     "crawlee": "^3.13.8",
     "playwright": "1.54.1"
   }
