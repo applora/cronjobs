@@ -7,7 +7,7 @@
     "dev": "tsx watch ./src/index.ts",
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "postinstall": "camoufox-js fetch"
+    "camoufox-fetch": "camoufox-js fetch"
   },
   "keywords": [],
   "author": "",
